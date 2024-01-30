@@ -1,0 +1,48 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title></title>
+  <link href="signin.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+  <fieldset>
+    <h1 class="signin-h1">sign in Form :</h1>
+    <form action="#">
+      <table class="tableclass">
+        <br>
+        <input type="email" required name="Email" class="input-class" placeholder="Email" />
+        <br>
+        <br>
+        <input type="password" required name="Password" class="input-class" placeholder="Password" minlength="4"
+          maxlength="12"/>
+      </table>
+      <div>
+        <br>
+        <input type="checkbox" class="remember-me" value="Remember-Me" id="remember-me"><span style="color: rgb(206, 206, 206);">Remember Me</span>
+        <br>
+        <input class="button-submit" type="submit" value="Login" onclick="myfun()">
+        <br>
+        <br>
+        <a class="link-Thing">Forgot Password</a>
+        <br>
+        <br>
+        <a class="link-Thing" href="./../sign up form/signup.html">Sign Up?</a>
+        <br>
+        <br>
+        <a class="link-Thing">Need Help?</a>
+        <br>
+      </div>
+    </form>
+  </fieldset>
+</body>
+<script>
+  function myfun() {
+    window.alert("Logined !");
+}
+</script>
+
+</html>

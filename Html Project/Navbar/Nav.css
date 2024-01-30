@@ -1,0 +1,75 @@
+:root{
+    --Gray: #ebebeb;
+    --Green: #00653d;
+    --Dark-Green: #014429;
+}
+body{
+    background-color: var(--Gray);
+}
+ul {
+    list-style-type: none;
+    margin-top: 0;
+    padding: 0;
+    background-color: var(--Green);
+    width: 100%;
+  }
+  li {
+    float: left;
+    height: 50px;
+    display: block;
+    text-align: center;
+    font-size: 19px;
+    cursor: pointer;
+    padding-left: 5px;
+    min-width: 110px;
+  }
+  li ul li {
+    min-width: 90px;
+  }
+  li a {
+    text-decoration: none;
+    color: var(--Gray);
+    background-color: var(--Green);
+    display: block;
+    padding: 15px;
+    border-radius: 15px;
+  }
+  li a:hover {
+    background-color: var(--Green);
+    color: var(--Gray);
+    transition: 0.7s;
+    transform: scale(110%);
+  }
+  li ul {
+    display: none;
+  }
+  li:hover > ul {
+    display: block;
+    position: relative;
+    z-index: 100;
+  }
+  li ul li {
+    background-color: var(--Green);
+    color: whitesmoke;
+    border: 1px solid var(--Green);
+    float: none;
+    transition: all 0.5s;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 1px;
+    z-index: 1;
+    padding-top: 10px;
+  }
+  li ul li:hover {
+    transform: scale(110%);
+    border-radius: 15px;
+    background-color: var(--Dark-Green);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  }
+  li ul li :hover li ul {
+    background-color: var(--Green);
+  }
+  .menudiv {
+    margin-left: 650px;
+    margin-top: 500px;
+  }

@@ -1,0 +1,111 @@
+* {
+  font-style: italic;
+  color: #ececee;
+  font-size: 20px;
+}
+fieldset {
+  /* background-color: #ececee; */
+  margin-left: auto;
+  width: 30%;
+  margin-right: auto;
+  text-align: center;
+  background: transparent;
+  backdrop-filter: blur(9px);
+  border: 7px groove #ececee;
+  padding-top: 25px;
+  margin-top: 25px;
+}
+body {
+  /* background-color: #f85600; */
+  background-image: url("moon.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 0;
+  border-image: fill 0 linear-gradiant(#0003, #000);
+}
+/* INPUTS  */
+input {
+  border-radius: 12px;
+  color: black;
+  font-size: medium;
+}
+.input-class:focus {
+  transition: 1s;
+  background-color: whitesmoke;
+  transform:  scale(110%);
+  font-size: medium;
+  box-shadow: 2px 2px 2px #ececee;
+}
+.input-class {
+  width: 410px;
+  height: 30px;
+}
+.input-class:hover {
+  box-shadow: 3px 3px 3px #ececee;
+  transition: 0.5s;
+  transform: translateZ(15px, 15px);
+}
+/* H1 SIGN UP */
+.h1-signup {
+  text-align: center;
+  padding-top: 15px;
+  font-size: xx-large;
+}
+
+/* BUTTON SUBMIT */
+.btn {
+  position: relative;
+  overflow: hidden;
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  bottom: -10px;
+  left: -30px;
+  width: 10px;
+  rotate: 35deg;
+  background-color: #292828;
+}
+.btn:hover::before {
+  left: calc(100% + 30px);
+  transition: left 1.3s;
+}
+.btn {
+  width: 100px;
+  background-color: #ececee;
+  color: #292828;
+}
+.btn:hover {
+  box-shadow: 4px 4px 4px #292828;
+  border-radius: 15px;
+  transition: 0.5s;
+  cursor: pointer;
+  width: 100px;
+}
+.btn:focus{
+  background: 25px;
+  align-items: end;
+}
+.Sign-In{
+  text-decoration: none;
+}
+.Sign-In:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.Forgot-Password{
+  text-decoration: none;
+}
+.Forgot-Password:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.remember-me {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+
+

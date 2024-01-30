@@ -1,0 +1,85 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="signup.css" rel="stylesheet" type="text/css" />
+</head>
+<style>
+    /* button:hover{
+        box-shadow: 4px 4px 4px black;
+        width: 50px;
+        transition: 0.5s;
+    } */
+</style>
+<body class="body-class">
+    <fieldset style="border-radius: 7%">
+        <b class="h1-signup">Sign Up Form :</b>
+        <br>
+        <br>
+        <form>
+            <table class="table-class">
+                <div> Your Name :
+                    <br>
+                    <br>
+                    <input type="text" required class="input-class" />
+                </div>
+                <br>
+                <div> Your Lastname :
+                    <br>
+                    <br>
+                    <input class="input-class" type="text" required />
+                </div>
+                <br>
+                <div> Your Addres :
+                    <br>
+                    <br>
+                    <input class="input-class" required type="text" />
+                    <br>
+                </div>
+                <br>
+                <div> Your Number :
+                    <br>
+                    <br>
+                    <input type="tel" required class="input-class" />
+                    <br>
+                </div>
+                <br>
+                <div>Your Email :
+                    <br>
+                    <br>
+                    <input type="email" required name="Email" class="input-class" />
+                </div>
+                <br>
+                <div>Your Password :
+                    <br>
+                    <br>
+                    <input type="password" required name="Password" class="input-class" />
+                </div>
+
+                <div>
+                    <br>
+                    <input type="checkbox" class="remember-me"> Remember me
+                    <br>
+                    <br>
+                    <a class="Forgot-Password" href="#">Need Help?</a>
+                    <br>
+                    <br>
+                    <a class="Sign-In" href="./../sign in form/signin.html">Sign In?</a>
+                    <br>
+                    <br>
+                    <button class="btn" onclick="MyFun()">Submit</button>
+
+                </div>
+            </table>
+        </form>
+    </fieldset>
+</body>
+
+</html>
+<script src="signup.js">
+    function myfun() {
+        Window.alert("Sent !");
+    }
+</script>

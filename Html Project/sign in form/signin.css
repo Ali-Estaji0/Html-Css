@@ -1,0 +1,91 @@
+:root {
+  --White: rgb(206, 206, 206);
+  --Blue: #0b45b1;
+}
+* {
+  font-style: italic;
+  font-size: 20px;
+  color: var(--Blue);
+}
+body {
+  background-image: url(./black-gold-luxury-background-black-elegant-background-free-vector.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: aliceblue;
+}
+fieldset {
+  margin-left: auto;
+  width: 25%;
+  margin-right: auto;
+  text-align: center;
+  background: transparent;
+  backdrop-filter: blur(20px);
+  padding-top: 25px;
+  margin-top: 8%;
+  height: 520px;
+  border-radius: 15px;
+  border: 10px groove var(--Blue);
+}
+.input-class {
+  width: 420px;
+  height: 35px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: hidden;
+  background-color: var(--White);
+  color: var(--Blue);
+  font-size: 16px;
+}
+.input-class:hover {
+  transition: 0.3s;
+  border: 1px solid var(--Blue);
+  color: var(--Blue);
+  box-shadow: 2px 2px 2px var(--Blue);
+}
+.input-class:focus {
+  transition: 0.5s;
+  border: 1px solid var(--Blue);
+  color: var(--Blue);
+  transform: scale(105%);
+  border: hidden;
+}
+.input-class::placeholder {
+  padding-left: 5px;
+  color: var(--Blue);
+}
+.signin-h1 {
+  font-size: 41px;
+  background: -webkit-linear-gradient(45deg, blue, #528fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 10px;
+}
+.remember-me {
+  margin-top: 20px;
+  width: 15px;
+  height: 15px;
+}
+.button-submit {
+  margin-top: 20px;
+  width: 380px;
+  height: 30px;
+  text-align: center;
+  border-radius: 15px;
+  color: var(--Blue);
+}
+.button-submit:hover {
+  box-shadow: inset var(--White);
+  border-color: var(--White);
+  color: var(--White);
+  background-color: var(--Blue);
+  transition: 0.7s;
+  cursor: pointer;
+}
+.link-Thing{
+  color: var(--White);
+  text-decoration: none;
+}
+.link-Thing:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
