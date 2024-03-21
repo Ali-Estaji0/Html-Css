@@ -1,0 +1,127 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body onclick="myfun8()">
+    <input type="text" name="input"> 
+    <br>
+    <br>
+    <button onclick="myfun()">test</button>
+    <p id="demo"></p>
+    <br>
+    <button onclick="myfun2()">test2</button>
+    <p id="demo2"></p>
+    <br>
+    <button onclick="myfun3()">test3</button>
+    <p id="demo3"></p>
+    <br>
+    <button onclick="myfun4()">test4</button>
+    <p id="demo4"></p>
+    <br>
+    <button onclick="myfun5()">test5</button>
+    <p id="demo5"></p>
+    <br>
+    <button onclick="myfun6()">test6</button>
+    <p id="demo6"></p>
+    <br>
+    <button onclick="demo7()">test7</button>
+    <p id="demo7"></p>
+    <br>
+    <p id="demo8"></p>
+</body>
+<script>
+    function myfun8() {
+        const element = document.activeElement.tagName;
+        document.getElementById('demo8').innerHTML = element;
+    }
+    
+    const time = [];
+    function myfun() {
+        document.getElementById('demo').innerHTML = Math.floor(Math.random() * 11000);
+    }
+
+    let day;
+    function myfun2() {
+        switch (new Date().getDay()) {
+            case 0:
+                day = "Sunday.";
+                break;
+            case 1:
+                day = "Monday.";
+                break;
+            case 2:
+                day = "Tuesday.";
+                break;
+            case 3:
+                day = "Wednesday.";
+                break;
+            case 4:
+                day = "Tursdaay.";
+                break;
+            case 5:
+                day = "Friday.";
+                break;
+            case 6:
+                day = "Saturaday.";
+                break;
+        }
+        document.getElementById("demo2").innerHTML = "Today is " + day;
+    }
+    function myfun3() {
+
+        let text = "";
+        const cars = ["Volvo", "Bmw", "Audi", "Pride", "Xantia", "Peugeot"];
+
+        for (let i = 0; i < cars.length; i++) {
+            text += cars[i] + "<br>";
+        }
+
+        document.getElementById('demo3').innerHTML = text;
+    }
+    let greeting;
+    const hours = new Date().getDay();
+    function myfun4() {
+        if (hours < 1) {
+            greeting = "Good Morning";
+        } else {
+            greeting = "Good Afternoon";
+        }
+        document.getElementById('demo4').innerHTML = greeting;
+    }
+
+    function myfun5() {
+        let i = 0;
+        let text = "";
+        do {
+            text += "<br>" + i;
+            i++;
+        }
+        while (i <= 10);
+        document.getElementById('demo5').innerHTML = text;
+    }
+
+    function myfun6() {
+        let i = 0;
+        let text = "";
+        const cars = ["Volvo", "Bmw", "Audi", "Pride", "Xantia", "Peugeot"];
+
+        while (cars[i]) {
+            text += "<br>" + cars[i];
+            i++;
+        }
+        document.getElementById('demo6').innerHTML = text;
+    }
+    const myset = new Set([1, 2, 3, 3, 4, 5, 6, 6, 1, 2, 3, 6, 5, 4]);
+
+    myset.add(7);
+    myset.add(8);
+    myset.add(9);
+
+    document.getElementById('demo7').innerHTML = myset.size;
+</script>
+
+</html>
